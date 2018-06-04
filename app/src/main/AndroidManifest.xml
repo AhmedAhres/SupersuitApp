@@ -12,23 +12,19 @@
         <activity
             android:name=".SettingsActivity"
             android:label="Supersuit">
-            <!--
+        </activity>
+        <activity android:name=".BatteryActivity">
+        </activity>
+        <activity
+            android:name=".Weight"
+            android:label="Weight" />
+        <activity android:name=".MainMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity>
-        <activity android:name=".BatteryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Weight"
-            android:label="Weight"></activity>
     </application>
 
 </manifest>
