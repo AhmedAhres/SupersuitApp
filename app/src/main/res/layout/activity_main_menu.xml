@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainMenuActivity">
+    android:background="#5CDB94"
 
     <ImageView
         android:id="@+id/settingsButton"
@@ -19,13 +20,34 @@
 
     <ImageView
         android:id="@+id/batteryButton"
-        android:layout_width="149dp"
-        android:layout_height="186dp"
+        android:layout_width="154dp"
+        android:layout_height="179dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="60dp"
         android:src="@mipmap/battery_foreground"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/gpsButton"
+        android:layout_width="151dp"
+        android:layout_height="171dp"
+        android:layout_alignTop="@+id/settingsButton"
+        android:layout_marginStart="-2dp"
+        android:layout_toEndOf="@+id/settingsButton"
+        android:src="@mipmap/gpss_foreground"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/WeightButton"
+        android:layout_width="149dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/settingsButton"
+        android:layout_toEndOf="@+id/settingsButton"
+        android:src="@mipmap/weight_foreground"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="16dp" />
 
