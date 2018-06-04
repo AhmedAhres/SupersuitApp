@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="159dp"
+        android:layout_height="172dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/batteryButton"
+        android:layout_marginStart="48dp"
+        android:src="@mipmap/settings_foreground"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/batteryButton"
+        android:layout_width="149dp"
+        android:layout_height="186dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="53dp"
+        android:src="@mipmap/battery_foreground"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</android.widget.RelativeLayout>
