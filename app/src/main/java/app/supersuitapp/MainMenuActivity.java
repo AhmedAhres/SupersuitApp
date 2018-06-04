@@ -56,19 +56,16 @@ public class MainMenuActivity extends AppCompatActivity {
     public void openBatteryScreen() {
         Intent intent = new Intent(this, BatteryActivity.class);
         startActivity(intent);
-        finish();
     }
 
     public void openSettingsScreen() {
-        Intent intent = new Intent(this, SettingsActivity.class);
+        Intent intent = new Intent(this, OurSettingsActivity.class);
         startActivity(intent);
-        finish();
     }
 
     public void openWeightScreen() {
         Intent intent = new Intent(this, Weight.class);
         startActivity(intent);
-        finish();
     }
 
 }

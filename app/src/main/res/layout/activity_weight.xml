@@ -22,7 +22,8 @@
         android:layout_width="217dp"
         android:layout_height="146dp"
         android:layout_above="@+id/imageView1"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp"
         android:src="@mipmap/weight2"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="313dp" />
