@@ -12,4 +12,9 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="Weight"/>
 
+    <header
+        android:fragment="app.supersuitapp.SettingsActivity$BatteryFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/pref_header_battery" />
+
 </preference-headers>
