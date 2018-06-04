@@ -11,19 +11,25 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SettingsActivity"
-            android:label="Supersuit">
-        </activity>
-        <activity android:name=".BatteryActivity">
+            android:label="Supersuit"></activity>
+        <activity android:name=".BatteryActivity"
+            android:parentActivityName=".MainMenuActivity">
         </activity>
         <activity
             android:name=".Weight"
-            android:label="Weight" />
+            android:label="Weight"
+            android:parentActivityName=".MainMenuActivity"
+            />
         <activity android:name=".MainMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".OurSettingsActivity"
+            android:parentActivityName=".MainMenuActivity">
+
         </activity>
     </application>
 

@@ -12,28 +12,46 @@ public class MainMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        openBattery();
+        openWeight();
+        openSettings();
     }
 
-//    ImageView mImageView = (ImageView)findViewById(R.id.settingsButton);
-//    mImageView.setOnClickListener(new View.OnClickListener() {
-//
-//        @Override
-//        public void onClick(View view) {
-//            // do stuff
-//        }
-//
-//    });
+    public void openBattery() {
+        ImageView mImageView = (ImageView) findViewById(R.id.batteryButton);
+        mImageView.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                openBatteryScreen();
+            }
 
-//    mImageView.setOnClickListener(new View.OnClickListener() {
-//
-//        @Override
-//        public void onClick(View view) {
-//            // do stuff
-//        }
-//
-//    });
+        });
+    }
 
+    public void openWeight() {
+        ImageView mImageView = (ImageView) findViewById(R.id.WeightButton);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                openWeightScreen();
+            }
+
+        });
+    }
+
+    public void openSettings() {
+        ImageView mImageView = (ImageView) findViewById(R.id.settingsButton);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                openSettingsScreen();
+            }
+
+        });
+    }
 
     public void openBatteryScreen() {
         Intent intent = new Intent(this, BatteryActivity.class);
