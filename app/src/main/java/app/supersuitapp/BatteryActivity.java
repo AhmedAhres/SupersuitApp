@@ -10,12 +10,5 @@ public class BatteryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battery);
-        setTitle("Battery");
-
-        //add back button
-        getSupportActionBar().setTitle("Battery");
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 }

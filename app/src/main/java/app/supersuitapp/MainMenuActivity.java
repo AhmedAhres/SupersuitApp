@@ -13,12 +13,12 @@ public class MainMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         openBattery();
-        openWeight();
         openSettings();
+        openWeight();
     }
 
     public void openBattery() {
-        ImageView mImageView = (ImageView) findViewById(R.id.batteryButton);
+        ImageView mImageView = findViewById(R.id.batteryButton);
         mImageView.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -30,7 +30,7 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void openWeight() {
-        ImageView mImageView = (ImageView) findViewById(R.id.WeightButton);
+        ImageView mImageView = findViewById(R.id.WeightButton);
         mImageView.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -42,7 +42,7 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void openSettings() {
-        ImageView mImageView = (ImageView) findViewById(R.id.settingsButton);
+        ImageView mImageView = findViewById(R.id.settingsButton);
         mImageView.setOnClickListener(new View.OnClickListener() {
 
             @Override

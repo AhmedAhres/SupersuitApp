@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SettingsActivity"
-            android:label="Supersuit"></activity>
         <activity android:name=".BatteryActivity"
             android:parentActivityName=".MainMenuActivity">
         </activity>
@@ -27,9 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OurSettingsActivity"
+        <activity
+            android:name=".OurSettingsActivity"
             android:parentActivityName=".MainMenuActivity">
-
         </activity>
     </application>
 
