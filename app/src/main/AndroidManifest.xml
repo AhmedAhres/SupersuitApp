@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.supersuitapp">
+    <uses-permission android:name="com.weaverprojects.gpstest.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -9,14 +17,19 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BatteryActivity"
-            android:parentActivityName=".MainMenuActivity">
-        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC3C39_z73xHYVmM0wt1ZDqgAsmLMe98J4"/>
+        <activity
+            android:name=".BatteryActivity"
+            android:parentActivityName=".MainMenuActivity"></activity>
         <activity
             android:name=".Weight"
             android:label="Weight"
-            android:parentActivityName=".MainMenuActivity"
-            />
+            android:parentActivityName=".MainMenuActivity" />
         <activity android:name=".MainMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +39,8 @@
         </activity>
         <activity
             android:name=".OurSettingsActivity"
-            android:parentActivityName=".MainMenuActivity">
-        </activity>
+            android:parentActivityName=".MainMenuActivity"></activity>
+        <activity android:name=".GPSActivity"></activity>
     </application>
 
 </manifest>

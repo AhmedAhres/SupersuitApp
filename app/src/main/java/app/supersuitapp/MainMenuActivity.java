@@ -15,6 +15,7 @@ public class MainMenuActivity extends AppCompatActivity {
         openBattery();
         openSettings();
         openWeight();
+        openGPS();
     }
 
     public void openBattery() {
@@ -53,6 +54,18 @@ public class MainMenuActivity extends AppCompatActivity {
         });
     }
 
+    public void openGPS() {
+        ImageView mImageView = findViewById(R.id.gpsButton);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                openGPSScreen();
+            }
+
+        });
+    }
+
     public void openBatteryScreen() {
         Intent intent = new Intent(this, BatteryActivity.class);
         startActivity(intent);
@@ -65,6 +78,11 @@ public class MainMenuActivity extends AppCompatActivity {
 
     public void openWeightScreen() {
         Intent intent = new Intent(this, Weight.class);
+        startActivity(intent);
+    }
+
+    public void openGPSScreen() {
+        Intent intent = new Intent(this, GPSActivity.class);
         startActivity(intent);
     }
 
