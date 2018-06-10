@@ -8,19 +8,26 @@
         android:label="Supersuit"
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        >
         <activity
             android:name=".SettingsActivity"
-            android:label="Supersuit"></activity>
+            android:label="Settings"
+            android:theme="@style/SettingTheme">
+
+        </activity>
         <activity android:name=".BatteryActivity"
+            android:label="Battery"
+            android:theme="@style/BatteryTheme"
             android:parentActivityName=".MainMenuActivity">
         </activity>
         <activity
             android:name=".Weight"
             android:label="Weight"
+            android:theme="@style/WeightTheme"
             android:parentActivityName=".MainMenuActivity"
             />
-        <activity android:name=".MainMenuActivity">
+        <activity android:name=".MainMenuActivity"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
