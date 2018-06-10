@@ -25,10 +25,13 @@
             android:value="AIzaSyC3C39_z73xHYVmM0wt1ZDqgAsmLMe98J4"/>
         <activity
             android:name=".BatteryActivity"
+            android:label="Battery"
+            android:theme="@style/BatteryTheme"
             android:parentActivityName=".MainMenuActivity"></activity>
         <activity
             android:name=".Weight"
             android:label="Weight"
+            android:theme="@style/WeightTheme"
             android:parentActivityName=".MainMenuActivity" />
         <activity android:name=".MainMenuActivity">
             <intent-filter>
@@ -39,8 +42,12 @@
         </activity>
         <activity
             android:name=".OurSettingsActivity"
+            android:label="Settings"
+            android:theme="@style/SettingTheme"
             android:parentActivityName=".MainMenuActivity"></activity>
-        <activity android:name=".GPSActivity"></activity>
+        <activity android:name=".GPSActivity"
+            android:label="Find case"
+            android:theme="@style/BatteryTheme"></activity>
     </application>
 
 </manifest>
